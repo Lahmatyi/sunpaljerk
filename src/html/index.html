@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SunPalJerk. Coming Soon...</title>
+    <link href="/styles/index.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <script>
+        window.onload = function () {
+            function getRandomIntInclusive(min, max) {
+                min = Math.ceil(min);
+                max = Math.floor(max);
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+
+            var randomIntInclusive = getRandomIntInclusive(1,4);
+            var html = "<video class=\"background-video\" autoplay loop muted preload=\"auto\">" +
+                "    <source type=\"video/webm\" src=\"/media/video/video0" + randomIntInclusive + ".webm\">" +
+                "    <source type=\"video/mp4\" src=\"/media/video/video0" + randomIntInclusive +".mp4\">" +
+                "</video>"
+            document.body.innerHTML += html;
+        }
+    </script>
+</head>
+<body>
+<div class="border">
+    <div class="border-internal">
+    </div>
+    <h1 class="title">SUNPALJERK.COM</h1>
+    <div class="coming-soon-en">Coming soon</div>
+    <div class="coming-soon-ru">Скоро открытие</div>
+</div>
+</body>
+</html>
