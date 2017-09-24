@@ -1,7 +1,10 @@
 body{
     margin:0;
     padding:0;
-    min-height: 100%;
+    width: 100vw;
+    height: 100vh;
+    position:relative;
+    background-color: #000000;
 }
 
 .background-video{
@@ -55,12 +58,16 @@ body{
 }
 
 .border{
-    position: relative;
+    position: absolute;
     width: 900px;
     height: 250px;
     border: gainsboro 3px solid;
-    margin: auto;
-    margin-top: 240px;
+    /*margin: auto;
+    margin-top: 240px;*/
+    top: 50%;
+    left:50%;
+    margin-top: -125px;
+    margin-left: -450px;
 }
 
 .border-internal{
